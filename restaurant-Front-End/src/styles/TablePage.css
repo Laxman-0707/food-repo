@@ -1,0 +1,123 @@
+:root{
+    --headerWidth : 65px;
+}
+
+.Tableheader{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #131837;
+    height: var(--headerWidth);
+}
+
+.TableLeft{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.BackIcon{
+    color: white;
+}
+
+.leftTableName{
+    margin-left: 10px;
+}
+
+.leftTableName > h3 {
+    font-size: 20px;
+}
+
+.leftTableName > p{
+    font-size: 11px;
+}
+
+.TableRight{
+    margin: 5px 20px;
+}
+
+.tableButton{
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableButton:hover{
+    cursor: pointer;
+}
+
+
+.TableBody{
+    background-color: #0e1229;
+    min-height: calc(100vh - var(--headerWidth));
+    display: flex;
+}
+
+.menu{
+    flex: 0.75;
+}
+
+.menuSelectors, .menuItems{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.menuItems{
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rightPart{
+    display: flex;
+    flex: 0.25;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.orders{
+    height: auto;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1200px) {
+    .menuSelectors, .menuItems{
+        grid-template-columns: repeat(3, auto);
+    }
+    
+}
+
+@media screen and (max-width : 900px) {
+    .menuSelectors, .menuItems{
+        grid-template-columns: repeat(2, auto);
+    }
+    
+}
+
+@media screen and (max-width : 430px) {
+    .menuSelectors, .menuItems{
+        grid-template-columns: repeat(1, auto);
+    }
+    
+}
+
+@media screen and (max-width : 800px) {
+    .TableBody{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,117 @@
+:root{
+    --headerWidth : 60px;
+}
+
+.Tableheader{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    color: white;
+    background-color: #131837;
+    height: var(--headerWidth);
+}
+
+.TableLeft{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.BackIcon{
+    color: white;
+}
+
+.leftTableName{
+    margin-left: 10px;
+}
+
+.leftTableName > h3 {
+    font-size: 20px;
+}
+
+.leftTableName > p{
+    font-size: 10px;
+}
+
+.TableRight{
+    display: flex;
+    align-items: center;
+}
+
+.TableRight{
+    display: flex;
+    align-items: center;
+}
+
+.TableRightOrders{
+    background-color: #3541d6;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TableRightOrders:hover{
+    cursor: pointer;
+}
+
+.TableRightCustomers{
+    background-color: #5b45b2;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TableRightCustomers:hover{
+    cursor: pointer;
+}
+
+.body{
+    background-color: #0e1229;
+    min-height: calc(100vh - var(--headerWidth));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 70px;
+  margin-bottom: 20px;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width : 900px) {
+    .grid{
+        grid-template-columns: repeat(2, auto);
+    }
+    
+}
+
+@media screen and (max-width : 600px) {
+    .grid{
+        grid-template-columns: repeat(1, auto);
+    }
+    
+}

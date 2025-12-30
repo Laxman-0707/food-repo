@@ -1,0 +1,31 @@
+.SummaryContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e1229;
+}
+
+.SummaryCard {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+}
+
+.SummaryCard h1 {
+    color: #0e1229;
+    margin: 20px 0;
+}
+
+.HomeBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

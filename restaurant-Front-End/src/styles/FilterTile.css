@@ -1,0 +1,20 @@
+.filterTile{
+    color: white;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.filterTile > h2{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.items{
+    margin-top: 20px;
+}
+
+.filterTile:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}

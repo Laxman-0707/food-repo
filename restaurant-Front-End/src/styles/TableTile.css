@@ -1,0 +1,53 @@
+/* Base styling for the Table Tile */
+.TableComponent {
+    padding: 20px;
+    border-radius: 18px; /* Slightly more rounded for a modern look */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth movement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 140px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Effect: Lift, Brighten, and Shadow */
+.TableComponent:hover {
+    transform: translateY(-8px) scale(1.02); /* Lifts the card up */
+    filter: brightness(1.2) contrast(1.1); /* Makes it much brighter */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Adds deep shadow for depth */
+}
+
+/* Specific Glow for Green (Vacant) Tables */
+.TableComponent[style*="green"]:hover {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.6); /* Green glow */
+}
+
+/* Specific Glow for Orange (Booked) Tables */
+.TableComponent[style*="orange"]:hover {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.6); /* Orange glow */
+}
+
+/* Active Click Effect */
+.TableComponent:active {
+    transform: translateY(-2px) scale(0.98);
+    transition: 0.1s;
+}
+
+/* Typography inside the tile */
+.TableComponent h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.TableComponentStatus {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}

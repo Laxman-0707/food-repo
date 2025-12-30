@@ -1,0 +1,35 @@
+:root {
+  --main-bg: #0f172a;
+  --glass: rgba(255, 255, 255, 0.1);
+  --accent-blue: #3b82f6;
+  --grad-green: linear-gradient(135deg, #10b940, #05961d);
+  --grad-orange: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+body {
+  background-color: var(--main-bg);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Vibrant Table Tiles */
+.TableComponent {
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.TableComponent:hover {
+    transform: translateY(-8px);
+    filter: brightness(5.0);
+}
+
+/* Glass Header */
+.Tableheader {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass);
+    padding: 0 20px;
+}

@@ -1,0 +1,41 @@
+.orderContents{
+    background-color: #0e1229;
+    color: white;
+    width: 100%;
+}
+
+.orderContentsBody{
+    height: 49vh;
+    overflow-y: scroll;
+}
+
+.empty{
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.orderContentsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.rightOrderContents > *{
+    margin-right: 10px;
+}
+
+.orderContentsBody::-webkit-scrollbar {
+    display: none;
+  }
+  .orderContentsBody {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+

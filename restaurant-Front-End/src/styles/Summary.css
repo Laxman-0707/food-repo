@@ -1,0 +1,30 @@
+.summaryPage {
+    background-color: #0f172a;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.RevenueCard {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.HistoryItem {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.saleInfo { display: flex; flex-direction: column; }
+.saleInfo span { font-size: 12px; color: #94a3b8; }
+.saleAmount { font-weight: bold; color: #10b981; }
