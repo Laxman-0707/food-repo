@@ -6,7 +6,8 @@ import SummaryPage from "./pages/SummaryPage";
 const router = createBrowserRouter([
   {path: "/", element: <HomePage restaurantName={" HOTEL ALPHA "}/>},
   {path: "/:tableId", element: <TablePage />},
-  {path: "/summary", element: <SummaryPage />}
+  {path: "/summary", element: <SummaryPage />},
+  {basename: "food-repo"}
 ])
 
 function App() {
