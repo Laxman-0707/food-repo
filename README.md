@@ -22,6 +22,12 @@ This cart is individual to each table and also it displays the total cost and th
 Once the customer has finished selecting their items, the application provides a streamlined workflow to finalize the transaction:
 <img width="1920" height="1080" alt="Screenshot 2025-12-31 121032" src="https://github.com/user-attachments/assets/5c4c87bc-4f5f-4357-859c-149cfe267a47" />
 
+## Project Demo
+
+Watch the demo video here:
+
+[![Watch the demo] https://youtube.com/watch?v=hpoJ6QzwFfU&si=SpP-196YKIsJrbKZ
+
 This entire app is build using React, Redux, React-Router.
 
 🚀 Features
