@@ -7,7 +7,7 @@ const router = createBrowserRouter([
   {path: "/", element: <HomePage restaurantName={" HOTEL ALPHA "}/>},
   {path: "/:tableId", element: <TablePage />},
   {path: "/summary", element: <SummaryPage />},
-  {basename: "food-repo"}
+  {basename: "/food-repo"}
 ])
 
 function App() {
