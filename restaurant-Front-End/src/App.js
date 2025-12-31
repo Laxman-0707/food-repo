@@ -8,8 +8,7 @@ const router = createBrowserRouter([
   {path: "/:tableId", element: <TablePage />},
   {path: "/summary", element: <SummaryPage />},
  
-],
- {basename: "/food-repo"})
+], {basename: "/food-repo"});
 
 function App() {
   return <RouterProvider router={router}/>;
